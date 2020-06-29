@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <title>Svg Editor</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Svg Editor</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+
+      </ul>
+      <form class="form-inline">
+
+        <label for=""></label>
+        <select class="custom-select" id="svgSelector">
+          <option selected disabled value="false">--select shape to draw --</option>
+          <option value="false1">no Shape</option>
+          <option value="Rectangle">Rectangle</option>
+          <option value="Circle">Circle</option>
+          <option value="SvgEllipse">Ellipse</option>
+          <option value="SvgLine">Line</option>
+          <option value="SvgPolygon">Polygon</option>
+          <option value="SvgPolyline">Polyline</option>
+        </select>
+
+      </form>
+    </div>
+  </nav>
+  <div class="container-fluid height">
+    <main class="row h-100">
+      <aside class="bg-cyan h-100 p-2">
+        <h2 class="text-white text-center ">options</h2>
+
+
+
+        <div class="form-Circle d-none">
+          <div class="form-group">
+            <label for="">the Circle r</label>
+            <input type="number" value="50" id="circleRadius" class="form-control" placeholder=""
+              aria-describedby="helpId">
+            <small id="helpId" class="text-muted">the circle radius</small>
+          </div>
+        </div>
+
+
+        <div class="form-Rectangle d-none">
+          <div class="form-group">
+            <label for="">React height</label>
+            <input type="number" name="" id="rectHeight" class="form-control" value="50" placeholder=""
+              aria-describedby="helpId1">
+            <small id="helpId1" class="text-muted">Help text</small>
+          </div>
+
+
+          <div class="form-group">
+            <label for="">React Width</label>
+            <input type="number" name="" id="rectWidth" class="form-control" value="50" placeholder=""
+              aria-describedby="helpId2">
+            <small id="helpId2" class="text-muted">Help text</small>
+          </div>
+        </div>
+
+
+        <div id="colorPicker">
+          <div id="view"></div>
+          <div id="colors">
+            <input type="text" id="txt" value=""> <button id="copy"><i class="material-icons"
+                style="font-size: 13px; transform: translateY(25%);position: relative;">content_copy</i></button>
+            <input class="inp" type="range" id="inp1" min="0" max="360" value="331" draggable="false">
+            <input class="inp" type="range" id="inp2" min="0" max="100" value="100" draggable="false">
+            <input class="inp" type="range" id="inp3" min="0" max="100" value="50" draggable="false">
+            <p id="rgb">rgb(255, 255, 255)</p>
+            <p id="hex">#ffffff</p>
+          </div>
+        </div>
+
+        <div class="text-center my-4">
+          <button class="btn btn-secondary" onclick="exportSvg()">Save as File</button>
+        </div>
+      </aside>
+      <svg width="80%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+    </main>
+  </div>
+
+  <a href="" id="link" class="d-none" download></a>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+  <script src="./test.js"></script>
+</body>
+
+</html>

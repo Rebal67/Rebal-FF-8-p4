@@ -1,0 +1,110 @@
+html,body{
+  height: 100%;
+}
+.height{
+  height: 94%;
+}
+aside{
+  width: 20%;
+  border: 1px solid grey;
+  background-color: #0CB0E8;
+}
+
+
+
+
+
+
+/* ---------------       Color Picker    ----------------- */
+
+
+#colorPicker {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+  background: white;
+  margin: 0 auto;
+  text-align: center;
+  /* border: solid 2px silver; */
+  border-radius: 20px;
+  resize: none;
+  }
+  #view {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  }
+  #colors {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  }
+  .inp {
+  width: 90%;
+  height: 8px;
+  border-radius: 20px;
+  margin: 13px 0;
+  -webkit-transition: 0.3s;
+  }
+  #inp1, #inp2, #inp3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%); */
+  background: linear-gradient();
+  }
+  #inp1::-webkit-slider-thumb {
+      background: var(--color1);
+  }
+  #inp2::-webkit-slider-thumb {
+      background: var(--color2);
+  }
+  #inp3::-webkit-slider-thumb {
+      background: var(--color3);
+  }
+  
+  .inp::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: solid 2px white;
+  background: #f2f2f2;
+  /* box-shadow: inset 0 0 2px silver; */
+  border-radius: 50%;
+  }
+  input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 25px;
+  height: 25px;
+  border: solid 1px #f2f2f2;
+  background: #f2f2f2;
+  box-shadow: inset 0 0 2px silver;
+  border-radius: 50%;
+  }
+  #txt {
+      margin:13px 0;
+      padding: 8px;
+      border: solid 1px silver;
+      border-radius: 5px;
+      text-align: center;
+      background: #ffffff;
+  }
+  #copy {
+      padding: 8px 8px;
+      border-radius: 5px;
+      border: solid 1px silver;
+      background: #ffffff;
+      cursor: pointer;
+      margin:13px 0;
+      -webkit-transition: 0.3s;
+  }
+  #copy:hover {
+      background: #f1f1f1;
+  }
